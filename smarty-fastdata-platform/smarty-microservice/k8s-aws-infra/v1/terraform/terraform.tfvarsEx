@@ -1,0 +1,10 @@
+default_keypair_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCcOlJf4phbHez+mHAOfCFxcTwhppjs5av7jfyX6csxviAyVipLFoh3kmRX/+i3caxEHlsWkf+fdxrmWWG2tmeqc4F0B57WPj8re74MU642/h9OucerrRu4pgtE9vuv8ec3YCEJtBHUdaVqtnNVgHAqH7twm6F2LGyEE4z9hnNPXJNZI/vmp26kO7SPcUvzkWKriNtLVkPTgndGHZzwFAKDM7WjyJiBsBid+hS7HF/2/iOF6BKfULD/5KltpleSJzu07/vivHHLnxlonjWWtfpBZv+hX9eLZtqGKUssaQwQmt8+YNlFhfuGzuIiVDy5jRCBRzhhqYoCClHudFEZ3Hdx"
+control_cidr = "172.31.0.0/16"
+default_keypair_name = "fastDataPlatform"
+vpc_name = "SmartyFastDataVPC"
+elb_name = "SmartyFastDataElb"
+owner = "SmartyFastData"
+
+region: "us-east-1"
+zone: "us-east-1c"
+default_ami: "ami-0f9cf087c1f27d9b1"

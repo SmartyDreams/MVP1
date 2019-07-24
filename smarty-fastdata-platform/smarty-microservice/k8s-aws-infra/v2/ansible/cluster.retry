@@ -1,0 +1,10 @@
+kubernetes-SmartFastData-etcd0
+kubernetes-SmartFastData-etcd1
+kubernetes-SmartFastData-etcd2
+kubernetes-SmartFastData-master0
+kubernetes-SmartFastData-master1
+kubernetes-SmartFastData-master2
+kubernetes-SmartFastData-worker0
+kubernetes-SmartFastData-worker1
+kubernetes-SmartFastData-worker2
+kubernetes-SmartFastData-worker3

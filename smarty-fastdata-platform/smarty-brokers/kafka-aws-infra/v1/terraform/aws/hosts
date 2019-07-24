@@ -1,0 +1,20 @@
+[all]
+kafka-SmartBroker-master0 ansible_host=18.232.160.95
+kafka-SmartBroker-master1 ansible_host=3.80.159.75
+kafka-SmartBroker-master2 ansible_host=54.91.73.53
+bastion ansible_host=34.235.120.174
+
+[bastion]
+bastion ansible_host=34.235.120.174
+
+[kube-master]
+kafka-SmartBroker-master0
+kafka-SmartBroker-master1
+kafka-SmartBroker-master2
+
+[k8s-cluster:children]
+kube-master
+
+[k8s-cluster:vars]
+apiserver_loadbalancer_domain_name="kafka-elb-SmartBroker-2084196873.us-east-1.elb.amazonaws.com"
+

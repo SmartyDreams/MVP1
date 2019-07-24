@@ -1,0 +1,45 @@
+[all]
+kubernetes-SmartFastData-master0 ansible_host=10.250.205.54
+kubernetes-SmartFastData-master1 ansible_host=10.250.209.22
+kubernetes-SmartFastData-master2 ansible_host=10.250.199.193
+kubernetes-SmartFastData-worker0 ansible_host=10.250.200.194
+kubernetes-SmartFastData-worker1 ansible_host=10.250.208.93
+kubernetes-SmartFastData-worker2 ansible_host=10.250.195.76
+kubernetes-SmartFastData-worker3 ansible_host=10.250.214.92
+kubernetes-SmartFastData-etcd0 ansible_host=10.250.195.168
+kubernetes-SmartFastData-etcd1 ansible_host=10.250.220.135
+kubernetes-SmartFastData-etcd2 ansible_host=10.250.205.17
+bastion ansible_host=34.207.75.142
+bastion ansible_host=100.24.125.197
+
+[bastion]
+bastion ansible_host=34.207.75.142
+bastion ansible_host=100.24.125.197
+
+[kube-master]
+kubernetes-SmartFastData-master0
+kubernetes-SmartFastData-master1
+kubernetes-SmartFastData-master2
+
+
+[kube-node]
+kubernetes-SmartFastData-worker0
+kubernetes-SmartFastData-worker1
+kubernetes-SmartFastData-worker2
+kubernetes-SmartFastData-worker3
+
+
+[etcd]
+kubernetes-SmartFastData-etcd0
+kubernetes-SmartFastData-etcd1
+kubernetes-SmartFastData-etcd2
+
+
+[k8s-cluster:children]
+kube-node
+kube-master
+
+
+[k8s-cluster:vars]
+apiserver_loadbalancer_domain_name="kubernetes-elb-SmartFastData-1355696343.us-east-1.elb.amazonaws.com"
+
