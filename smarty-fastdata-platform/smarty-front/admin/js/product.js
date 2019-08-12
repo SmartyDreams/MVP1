@@ -7,7 +7,7 @@ app.service("ProductService", ["$q", "$timeout",
 
       $timeout(function() {
         defer.resolve({
-          "name": "Sri Elephant T-shirt",
+          "name": "SmartyDreams T-shirt",
           "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae veritatis culpa pariatur ducimus aliquam iste est ut, unde neque at aperiam, hic, rem reprehenderit fuga minus sed. Aspernatur, consequuntur, iste.",
           "currentPrice": 33.00,
           "oldPrice": 46.00,
